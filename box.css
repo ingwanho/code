@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    top: 400px;   
+}
+body p{
+    border: 5px solid skyblue; 
+    background-color: white;
+    color: skyblue;
+}
+html{
+    background: radial-gradient(circle, #ff3366, #ffccff);
+}
