@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: darkgrey;
+}
+.name{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    margin: 0;
+    padding: 3px;
+    background-color: yellow; 
+    padding-top: 10px;
+    float: auto;
+    border: 3px solid black;
+}
+.day{
+    height: 300px;
+    width: calc(100%-200px);
+    float: left;
+    position: relative;
+    left: 210px;
+    background-color: white;
+    border: 3px solid black;
+    padding-right:800px;
+    font-size: 30px;
+}
+.name:nth-child(1){
+    font-size: 45px;
+
+}
