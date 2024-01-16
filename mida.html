@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <mata name="viewport" content="width=device-width, initial-scale=1.0"></mata>
+    <title>미디어쿼리</title>
+    <style>
+        div.box{
+            width: 3000px;
+            height: 3000px;
+            background-color: aqua;
+            
+        }
+        
+        @media screen and (min-width: 800px){
+            div.box{
+                background-color: blue;
+                
+            }
+        }
+        @media screen and (min-width: 1000px){
+            div.box{
+                background-color: beige;
+                
+            }
+        }
+        @media screen and (min-width: 1500px){
+            div.box{
+                background-color: seagreen;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>빵빵아</p>
+    </div>
+</body>
+</html>
