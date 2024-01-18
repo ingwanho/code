@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    transition:transfotm 0.5;
+}
+.inner {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.con {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+.inner img{
+    width: 100%;
+}

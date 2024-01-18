@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <mata name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="crrr.css" rel="stylesheet">
+</head>
+<body>
+    <div class="con">
+        <div class=""container"">
+            <div class="inner">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzExMDVfNDkg%2FMDAxNjk5MTgwMDU3MzYw.3epHtQp9irz8WLMETNnJ7rrbuPWbflHvvghuTtm_I0gg.8DAqHmpkw8uvkIkT883nHDda8MzG6K6e6udW02CFh3Ag.PNG.geeyoming%2F%25BA%25A3%25C0%25CE.PNG&type=sc960_832">
+            </div>
+            <div class="inner">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMDZfMjI5%2FMDAxNzAxODQ0ODMzMzQy.cW3ZFVKMMMPGifX2wUZ6uBUY3206PIG4GiNGIvTJADYg.QtKC6dZq0Kfod1dot97oRk57xesYoaBUZTq3oVU6B-gg.PNG.lets_game%2F2023-12-06_11_45_34.png&type=sc960_832">
+            </div>
+            <div class="inner">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMTNfMjU0%2FMDAxNzAyNDcxMjkyNzUw.QRHxHPfCgcB-CcaG4U4Ff4yAXzwOl2aOZ5E8DsH-tmMg.Zbm69PDrY5ssSIAjMygv4lBz4KaNSCkIsJSPGop4u50g.PNG.dbwlgns40%2F17.PNG&type=sc960_832">
+            </div>
+        </div>
+    </div>
+    
+    <button class="버튼1">1</button>
+    <button class="버튼2">2</button>
+    <button class="버튼3">3</button>
+
+    <script>
+        document.querySelector('.버튼2').addEventListener('click',function(){
+            document.querySelector('.container').style.transform = 'translate(-200px)';
+        })
+        document.querySelector('.버튼3').addEventListener('click',function(){
+            document.querySelector('.container').style.transform = 'translate(-400px)';
+        })
+        document.querySelector('.버튼1').addEventListener('click',function(){
+            document.querySelector('.container').style.transform = 'translate(0px)';
+        })
+    </script>
+</body>
+</html>
