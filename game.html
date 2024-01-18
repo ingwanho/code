@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스터리 숫자 맞추기 게임</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>미스터리 숫자 맞추기 게임</h1>
+    <p>1에서 10까지의 숫자 중 하나를 맞춰보세요!</p>
+
+    <label for="userGuess">숫자 입력:</label>
+    <input type="number" id="userGuess" min="1" max="100">
+    <button onclick="checkGuess()">확인</button>
+
+    <p id="result"></p>
+
+    <script>
+        var mysteryNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkGuess() {
+            var userGuess = parseInt(document.getElementById('userGuess').value);
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                document.getElementById('result').innerText = "1에서 100 사이의 유효한 숫자를 입력하세요.";
+            } else {
+                if (userGuess === mysteryNumber) {
+                    document.getElementById('result').innerText = "축하합니다! 숫자를 맞추셨습니다!";
+                } else {
+                    document.getElementById('result').innerText = "아쉽습니다. 다시 시도하세요.";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <mata name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+   <label for="exampleValue">예시값 입력:</label>
+    <input type="text" id="exampleValue">
+    <button onclick="checkGrade()">등급 확인</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkGrade() {
+            var exampleValue = document.getElementById('exampleValue').value;
+
+            if (!isNaN(exampleValue)) {
+                exampleValue = parseFloat(exampleValue);
+
+                if (exampleValue >= 90) {
+                    document.getElementById('result').innerText = "A 등급";
+                } else if (exampleValue >= 80) {
+                    document.getElementById('result').innerText = "B 등급";
+                } else if (exampleValue >= 70) {
+                    document.getElementById('result').innerText = "C 등급";
+                } else {
+                    document.getElementById('result').innerText = "D 등급";
+                }
+            } else {
+                document.getElementById('result').innerText = "올바른 숫자를 입력하세요.";
+            }
+        }
+    </script>
+</body>
+</html>
